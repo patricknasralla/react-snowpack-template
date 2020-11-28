@@ -1,7 +1,7 @@
 {
   "name": "snowpack-react-typescript",
   "version": "0.1.0",
-  "description": "Starter for future react/typescript projects using snowpack as the builder/buldler",
+  "description": "Starter for future react/typescript projects using snowpack as the build tool",
   "author": "Patrick Nasralla <patrick.nasralla@gmail.com>",
   "license": "MIT",
   "private": true,
@@ -27,8 +27,17 @@
     "@types/react": "^16.9.49",
     "@types/react-dom": "^16.9.8",
     "@types/snowpack-env": "^2.3.2",
+    "@typescript-eslint/eslint-plugin": "^4.8.2",
+    "@typescript-eslint/parser": "^4.8.2",
     "@web/test-runner": "^0.9.7",
     "chai": "^4.2.0",
+    "eslint": "^7.14.0",
+    "eslint-plugin-html": "^6.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-no-only-tests": "^2.4.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^6.0.1",
     "snowpack": "^2.17.1",
     "typescript": "^4.1.0"
   }

@@ -1,21 +1,22 @@
-import React, { useState, useEffect, ReactElement } from 'react';
+import './App.css'
+
+import React, { ReactElement, useEffect, useState } from 'react'
+
 import logo from './logo.svg'
-import './App.css';
 
-interface AppProps {}
 
-export function App({}: AppProps): ReactElement {
-  const [count, setCount] = useState(0);
-  
+export function App(): ReactElement {
+  const [count, setCount] = useState(0)
+
   useEffect(() => {
-    const timer = setTimeout(() => setCount(count + 1), 1000);
-    return () => clearTimeout(timer);
-  }, [count, setCount]);
-  
+    const timer = setTimeout(() => setCount(count + 1), 1000)
+    return () => clearTimeout(timer)
+  }, [count, setCount])
+
   return (
     <div className="App">
       <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -34,5 +35,5 @@ export function App({}: AppProps): ReactElement {
         </p>
       </header>
     </div>
-  );
+  )
 }
