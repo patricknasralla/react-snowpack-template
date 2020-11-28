@@ -1,4 +1,6 @@
-My template for front-end React applications using Typescript. 
+# Starter Template!
+
+My (highly opinionated) template for front-end React applications using Typescript. Just fork and start developing without (as much of) the setup headache!
 
 **Commands:**
 
@@ -16,3 +18,5 @@ My template for front-end React applications using Typescript.
 * Common stylelint configuration out of the box.
 * Immer as a standard dependency - because you're gonna use Immer, guaranteed.
 * Global store powered by Zustand with Immer as middleware so that all state changes occur through Immer. Sweet!
+
+For added Firestore hooks and functionality, merge in the `/firestore` branch before you start development.
