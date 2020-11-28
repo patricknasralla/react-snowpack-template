@@ -15,3 +15,4 @@ My template for front-end React applications using Typescript.
 * Full eslint configuration out of the box.
 * Common stylelint configuration out of the box.
 * Immer as a standard dependency - because you're gonna use Immer, guaranteed.
+* Global store powered by Zustand with Immer as middleware so that all state changes occur through Immer. Sweet!
