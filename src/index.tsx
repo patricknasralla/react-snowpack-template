@@ -4,10 +4,14 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import { App } from './App'
+import { FirestoreContext } from './firestore/context'
+import { Firestore } from './firestore/firestore'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <FirestoreContext.Provider value={new Firestore()} >
+      <App />
+    </FirestoreContext.Provider>
   </React.StrictMode>,
   document.getElementById('root'),
 )
