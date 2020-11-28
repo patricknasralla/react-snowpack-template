@@ -1,37 +1,33 @@
-import './App.module.css'
+import './App.css'
 
-import React, { ReactElement, useEffect, useState } from 'react'
+import React, { ReactElement, useEffect } from 'react'
 
 import logo from './logo.svg'
+import { useStore } from './state/store'
 
 
 export function App(): ReactElement {
-  const [count, setCount] = useState(0)
+  const count = useStore(state => state.count)
+  const increaseCount = useStore(state => state.increment)
 
   useEffect(() => {
-    const timer = setTimeout(() => setCount(count + 1), 1000)
+    const timer = setTimeout(() => increaseCount(1), 1000)
     return () => clearTimeout(timer)
-  }, [count, setCount])
+  }, [count, increaseCount])
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          I&apos;m made in react and I have a global,
+          immer powered store already, look:
         </p>
         <p>
-          Page has been open for <code>{count}</code> seconds.
+          Store has existed for <code>{count}</code> seconds.
         </p>
         <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          Now, <b>GO MAKE SOMETHING!</b>
         </p>
       </header>
     </div>
