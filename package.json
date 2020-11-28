@@ -1,0 +1,9 @@
+{
+  "name": "snowpack-react-typescript",
+  "version": "0.1.0",
+  "description": "Starter for future react/typescript projects using snowpack as the builder/buldler",
+  "main": "index.js",
+  "author": "Patrick Nasralla <patrick.nasralla@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
