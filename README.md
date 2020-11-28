@@ -1,4 +1,4 @@
-An initial setup for developing my front-end react applications in typescript. 
+My template for front-end React applications using Typescript. 
 
 **Commands:**
 
@@ -8,7 +8,10 @@ An initial setup for developing my front-end react applications in typescript.
 
 **Currently provides:**
 
-* Basic React Typescript template with hot reloading, building with snowpack, so it's super-fast and easy to configure!
+* Builds with snowpack, so it's super-fast and easy to configure!
+* Hot reloading.
 * Support for CSS Modules out of the box thanks to Snowpack.
-* Testing via web-test-runner and react-testing-library.
-* My full eslint configuration is ready out of the box.
+* Testing via web-test-runner/chai and react-testing-library.
+* Full eslint configuration out of the box.
+* Common stylelint configuration out of the box.
+* Immer as a standard dependency - because you're gonna use Immer, guaranteed.
