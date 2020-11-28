@@ -12,7 +12,6 @@ My (highly opinionated) template for front-end React applications using Typescri
 
 * Builds with snowpack, so it's super-fast and easy to configure!
 * Hot reloading.
-* Support for CSS Modules out of the box thanks to Snowpack.
 * Testing via web-test-runner/chai and react-testing-library.
 * Full eslint configuration out of the box.
 * Common stylelint configuration out of the box.
