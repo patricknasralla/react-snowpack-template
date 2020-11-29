@@ -17,5 +17,6 @@ My (highly opinionated) template for front-end React applications using Typescri
 * Common stylelint configuration out of the box.
 * Immer as a standard dependency - because you're gonna use Immer, guaranteed.
 * Global store powered by Zustand with Immer as middleware so that all state changes occur through Immer. Sweet!
+* CSS Modules out of the box
 
-For added Firestore hooks and functionality, merge in the `/firestore` branch before you start development.
+For added Firestore functionality and hooks, merge in the `/firestore` branch before you start development.
